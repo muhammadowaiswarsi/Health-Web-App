@@ -1,0 +1,148 @@
+.Home-component .navbar-nav{
+    float: right;
+}
+
+.Home-component .navbar-brand{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home-component .navbar-header{
+    width : 50%
+}
+
+.Home-component .navbar-default .navbar-brand{
+    color : #fff;
+    font-size: 45px
+}
+
+.Home-component .navbar{
+    border-color: #0473aa;
+}
+
+.Home-component .navbar-brand>img{
+    display: inline;
+}
+
+.Home-component .navbar-default .navbar-nav>li>a{
+    color : #fff;
+}
+
+.Home-component .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+    margin-left: 0;
+}
+
+.Home-component .container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.Home-component .navbar-default{
+    background: #0473aa !important;
+    border-radius: 0;
+}
+
+.Home-component .boxes-div{
+    margin-top: 20px;
+}
+
+.Home-component .navbar{
+    margin-bottom: 0;
+}
+
+.Home-component .main-div{
+    background-image: url("../../assets/background.jpg");
+    background-size: 100vw 500px;
+    height: 500px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    color : #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Home-component .search-main-div{
+    width: 40%;
+    height: 100px;
+    background : #00bff3;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+}
+
+.Home-component .feel-free-dr-div{
+    width : 100vw;
+    padding: 8px;
+    background : #00bff3;
+    text-align: center;
+    color : #fff;
+    display : flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Home-component .feel-free-dr-div-wht{
+    width : 100vw;
+    padding: 8px;
+    background : #fff;
+    text-align: center;
+    color : #000;
+    display : flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Home-component .PadMar{
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0;
+}
+
+.Home-component .picture-box-div{
+    border-radius: 8px;
+    border: 1px solid blue;
+    background-image: url("../../assets/background.jpg");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+
+.Home-component .city-search-div{
+    background : #00bff3;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.Home-component .noPadMar{
+    padding : 0;
+    margin : 0;
+}
+
+.Home-component .flex-and-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Home-component .flex-and-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Home-component .end-link-div{
+    margin-top: 40px;
+    background : #00bff3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
