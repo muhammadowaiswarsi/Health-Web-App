@@ -1,0 +1,238 @@
+.Search-component{
+    background: #EFEFEF;
+    width: 100%;
+    height: 180vh;
+}
+
+.Search-component .navbar-nav{
+    float: right;
+    width: 25%;
+    margin-top: 12px;
+    color : #fff;
+}
+
+.Search-component .navbar-brand{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Search-component .navbar-header{
+    width : 50%
+}
+
+.Search-component .navbar-default .navbar-brand{
+    color : #fff;
+    font-size: 45px
+}
+
+.Search-component .navbar{
+    border-color: #0473aa;
+    margin-bottom: 0;
+}
+
+.Search-component .navbar-brand>img{
+    display: inline;
+}
+
+.Search-component .navbar-default .navbar-nav>li>a{
+    color : #fff;
+}
+
+.Search-component .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+    margin-left: 0;
+}
+
+.Search-component .navbar-head{
+    margin : 0;
+}
+
+.Search-component .container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.Search-component .navbar-default{
+    background: #0473aa !important;
+    border-radius: 0;
+}
+
+.Search-component .left-side-panel{
+    height: 100%;
+    width : 100%;
+    background: #fff;
+    border-radius: 8px;
+    color : #7C7C7C
+}
+
+.Search-component .filter-div{
+    height: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Search-component .filter-input{
+    width: 90%;
+}
+
+.Search-component .filter-head-div{
+    width: 90%;
+}
+
+.Search-component .Treatment-div{
+    height: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Search-component .line-div{
+    border-top: 1px solid #7C7C7C;
+    width: 80%;
+}
+
+.Search-component .treatment-head{
+    width: 80%;
+}
+
+.Search-component .Treatment-option-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Search-component .treatment-option{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 0.4px 0.4px;
+    margin-bottom: 3px;
+}
+
+.Search-component .control {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    color : #7F7F7F;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow : 0px 0.2px;
+  }
+  
+  .Search-component .control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .Search-component .control__indicator {
+    position: absolute;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    font-size: 13px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .Search-component .control__indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+  .Search-component .control input:checked ~ .control__indicator:after {
+    display: block;
+  }
+  
+  .Search-component .control--checkbox .control__indicator:after {
+    left: 5px;
+    width: 6px;
+    height: 9px;
+    border: solid #ff0066;
+    color : #7F7F7F;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  .Search-component .treatment-div-margin{
+    margin-top: 10px;
+  }
+
+  .Search-component p{
+    margin: 0;
+  }
+
+  .Search-component .option-para{
+    width: 80%;
+  }
+
+  .Search-component .panel-col{
+    padding-right: 0;
+  }
+
+  .Search-component .option-para-more{
+    width: 80%;
+    display: flex;
+    text-shadow: 0.4px 0.4px;
+    margin-bottom: 3px;
+    justify-content: space-between;
+    }
+
+  .Search-component .space{
+      width: 20%
+  }
+
+  .Search-component .first-box{
+      width: 100%;
+      height: 500px;
+  }
+
+  .Search-component .first-div{
+    width: 100%;
+    border-radius: 8px;
+    background: #fff;
+    height: 400px;
+    padding: 10px;
+  }
+
+  .Search-component .first-div-head{
+      margin : 0;
+      color : #000
+  }
+
+  .Search-component .arrow-div{
+      width: 5%;
+      display: inline;
+  }
+
+  .Search-component .satisfied-main-div{
+      display: flex;
+      align-items: center;
+  }
+
+  .Search-component .right{
+      float: right;
+  }
+
+  .Search-component .btn-right{
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .Search-component h4{
+      margin-top: 3px;
+      margin-bottom: 3px;
+  }
+
+  .Search-component .next-btn{
+      
+  }
