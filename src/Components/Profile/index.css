@@ -1,0 +1,213 @@
+.Profile-component{
+    background: #EFEFEF;
+    width: 100%;
+    height: 230vh;
+    color : #868686;
+}
+
+.Profile-component .navbar-nav{
+    float: right;
+    width: 25%;
+    margin-top: 12px;
+    color : #fff;
+}
+
+.Profile-component .navbar-brand{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile-component .navbar-header{
+    width : 50%
+}
+
+.Profile-component .navbar-default .navbar-brand{
+    color : #fff;
+    font-size: 45px
+}
+
+.Profile-component .navbar{
+    border-color: #0473aa;
+    margin-bottom: 0;
+}
+
+.Profile-component .navbar-brand>img{
+    display: inline;
+}
+
+.Profile-component .navbar-default .navbar-nav>li>a{
+    color : #fff;
+}
+
+.Profile-component .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+    margin-left: 0;
+}
+
+.Profile-component .navbar-head{
+    margin : 0;
+}
+
+.Profile-component .container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.Profile-component .navbar-default{
+    background: #0473aa !important;
+    border-radius: 0;
+}
+
+.Profile-component .filter-head-div{
+    width: 90%;
+}
+
+  .Profile-component p{
+    margin: 0;
+  }
+
+  
+  .Profile-component .first-box{
+      width: 100%;
+      height: 500px;
+  }
+
+  .Profile-component .first-div{
+    width: 100%;
+    border-radius: 8px;
+    background: #fff;
+    height: 450px;
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+
+  .Profile-component .first-div-head{
+      margin : 0;
+      color : #000;
+      text-shadow: 0.2px 0.2px;
+      margin-left: 15px;
+  }
+
+  .Profile-component .arrow-div{
+      width: 5%;
+      display: inline;
+  }
+
+  .Profile-component .satisfied-main-div{
+      display: flex;
+      align-items: center;
+  }
+
+  .Profile-component .right{
+      float: right;
+  }
+
+  .Profile-component .btn-right{
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .Profile-component h4{
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+
+  .Profile-component .next-btn{
+      background: #F46523;
+      width: 100px;
+      color: #fff;
+  }
+
+  .Profile-component .arrow-forward{
+    transform: rotate(180deg);
+  }
+
+  .Profile-component .btn-default{
+      text-shadow: none;
+  }
+
+  .Profile-component .service-para{
+      color : #5D5D5D;
+      text-shadow: 0.2px 0.2px;
+  }
+
+  .Profile-component .price{
+      font-weight: bold;
+      color : #000;
+  }
+
+  .Profile-component .btn-default{
+      border : none;
+  }
+
+  .Profile-component .clinic-logo-image-div{
+      padding-left: 0;
+      display: flex;
+      align-items: center;
+  }
+
+  .Profile-component .clinic-Name{
+      margin : 0;
+      display: inline;
+  }
+
+  .Profile-component .contact-btn{
+      width : 100%;
+      background: #28BAF0;
+      height: 40px;
+      border-radius: 8px;
+      color : #fff;
+      font-size: 20px;
+      padding: 6px 6px;
+  }
+
+.Profile-component .second-div{
+    background: #fff;
+    border-radius : 8px;
+    padding: 15px;
+    text-shadow: 0.2px 0.2px;
+    margin-bottom: 20px;
+}
+
+.Profile-component .second-div-para{
+    font-size: 17px;
+}
+
+.Profile-component .border-div{
+    box-shadow: 0px 0px 0.5px 0.5px;
+    height: 60px;
+    border-radius: 3px;
+}
+
+.Profile-component .third-div{
+    background: #fff;
+    border-radius : 8px;
+    padding: 15px;
+    text-shadow: 0.2px 0.2px;
+    margin-bottom: 20px;
+    height: 235px;
+}
+
+.Profile-component .contact-doctor-btn{
+    width : 80%;
+      background: #28BAF0;
+      border-radius: 8px;
+      color : #fff;
+      font-size: 20px;
+      padding: 6px 6px;
+      margin-top: 5px;
+      display: flex;
+      justify-content: center;
+}
+
+.Profile-component .contact-doctor-btn-div{
+    padding: 0
+}
+
+.Profile-component .flex-and-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

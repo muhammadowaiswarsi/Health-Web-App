@@ -66,18 +66,21 @@ class Home extends Component {
                 <FormControl
                   type="text"
                   placeholder="Enter City"
+                  className="form-input"
                 />
               </Col>
               <Col md={3} className="PadMar">
                 <FormControl
                   type="text"
                   placeholder="Enter City"
+                  className="form-input"
                 />
               </Col>
               <Col md={3} className="PadMar">
                 <FormControl
                   type="text"
                   placeholder="Enter City"
+                  className="form-input"
                 />
               </Col>
               <Col md={2} className="PadMar">

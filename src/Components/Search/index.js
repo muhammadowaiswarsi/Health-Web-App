@@ -3,6 +3,8 @@ import { FormControl, Col, Button, Navbar, Image, Nav } from "react-bootstrap"
 import "./index.css"
 import Logo from "./../../assets/logo.png"
 import Doctor from "../../assets/happydoctor.jpg"
+import Arrow from "../../assets/left-arrow.png"
+import Arrowbtn from "../../assets/left-arrow-white.png"
 
 class Search extends Component {
     constructor() {
@@ -293,9 +295,9 @@ class Search extends Component {
                     </Col>
                     <Col md={8}>
                         <div className="first-div">
-                            <h1 className="first-div-head">
+                            <h2 className="first-div-head">
                                 Dr. Michael Smith
-                            </h1>
+                            </h2>
                             <Col md={4}>
                                 <Image src={Doctor} />
                             </Col>
@@ -339,7 +341,7 @@ class Search extends Component {
 
                                 <Col md={12} className="satisfied-main-div">
                                     <Col md={1}>
-                                        a
+                                        <Image src={Arrow} height="15px" />
                                     </Col>
 
                                     <Col md={10}>
@@ -347,21 +349,180 @@ class Search extends Component {
                                     </Col>
 
                                     <Col md={1}>
-                                        a
-                                        </Col>
+                                        <Image src={Arrow} className="arrow-forward" height="15px" />
+                                    </Col>
                                 </Col>
 
                                 <Col md={5}>
-                                    <h4>Service Stars from:</h4>
+                                    <h4 className="service-para">Service Stars from:</h4>
                                 </Col>
                                 <Col md={6}>
-                                    <h4 className="right">800 EURO</h4>
+                                    <h4 className="right price">800 EURO</h4>
                                 </Col>
                                 <Col md={1} />
 
                                 <Col md={4} />
                                 <Col md={8} className="btn-right">
-                                <Button className="next-btn">Warning</Button>
+                                    <Button className="next-btn">
+                                        Next
+                                    <Image src={Arrowbtn} className="arrow-forward" height="10px" />
+                                    </Button>
+                                </Col>
+                            </Col>
+                        </div>
+
+
+                        <div className="first-div">
+                            <h2 className="first-div-head">
+                                Dr. Michael Smith
+                            </h2>
+                            <Col md={4}>
+                                <Image src={Doctor} />
+                            </Col>
+
+                            <Col md={8}>
+                                <Col md={4}>
+                                    <h4>1st Speciality:</h4>
+                                </Col>
+                                <Col md={8}>
+                                    <h4>Ophthalmology</h4>
+                                </Col>
+
+                                <Col md={4}>
+                                    <h4>2nd Speciality:</h4>
+                                </Col>
+                                <Col md={8}>
+                                    <h4>Sub-Speciality here (1st)</h4>
+                                    <h4>Sub-Speciality here (2nd)</h4>
+                                </Col>
+
+                                <Col md={4}>
+                                    <h4>Location:</h4>
+                                </Col>
+                                <Col md={8}>
+                                    <h4>Germany</h4>
+                                </Col>
+
+                                <Col md={4}>
+                                    <h4>Language:</h4>
+                                </Col>
+                                <Col md={8}>
+                                    <h4>German, English, Spanish</h4>
+                                </Col>
+
+                                <Col md={4}>
+                                    <h4>Rating:</h4>
+                                </Col>
+                                <Col md={8}>
+                                    <h4>4, 5(2,0 reviews)</h4>
+                                </Col>
+
+                                <Col md={12} className="satisfied-main-div">
+                                    <Col md={1}>
+                                        <Image src={Arrow} height="15px" />
+                                    </Col>
+
+                                    <Col md={10}>
+                                        <h4>I was very satisfied and will come back again! Thanks a lot..</h4>
+                                    </Col>
+
+                                    <Col md={1}>
+                                        <Image src={Arrow} className="arrow-forward" height="15px" />
+                                    </Col>
+                                </Col>
+
+                                <Col md={5}>
+                                    <h4 className="service-para">Service Stars from:</h4>
+                                </Col>
+                                <Col md={6}>
+                                    <h4 className="right price">800 EURO</h4>
+                                </Col>
+                                <Col md={1} />
+
+                                <Col md={4} />
+                                <Col md={8} className="btn-right">
+                                    <Button className="next-btn">
+                                        Next
+                                    <Image src={Arrowbtn} className="arrow-forward" height="10px" />
+                                    </Button>
+                                </Col>
+                            </Col>
+                        </div>
+
+
+                        <div className="first-div">
+                            <h2 className="first-div-head">
+                                Dr. Michael Smith
+                            </h2>
+                            <Col md={4}>
+                                <Image src={Doctor} />
+                            </Col>
+
+                            <Col md={8}>
+                                <Col md={4}>
+                                    <h4>1st Speciality:</h4>
+                                </Col>
+                                <Col md={8}>
+                                    <h4>Ophthalmology</h4>
+                                </Col>
+
+                                <Col md={4}>
+                                    <h4>2nd Speciality:</h4>
+                                </Col>
+                                <Col md={8}>
+                                    <h4>Sub-Speciality here (1st)</h4>
+                                    <h4>Sub-Speciality here (2nd)</h4>
+                                </Col>
+
+                                <Col md={4}>
+                                    <h4>Location:</h4>
+                                </Col>
+                                <Col md={8}>
+                                    <h4>Germany</h4>
+                                </Col>
+
+                                <Col md={4}>
+                                    <h4>Language:</h4>
+                                </Col>
+                                <Col md={8}>
+                                    <h4>German, English, Spanish</h4>
+                                </Col>
+
+                                <Col md={4}>
+                                    <h4>Rating:</h4>
+                                </Col>
+                                <Col md={8}>
+                                    <h4>4, 5(2,0 reviews)</h4>
+                                </Col>
+
+                                <Col md={12} className="satisfied-main-div">
+                                    <Col md={1}>
+                                        <Image src={Arrow} height="15px" />
+                                    </Col>
+
+                                    <Col md={10}>
+                                        <h4>I was very satisfied and will come back again! Thanks a lot..</h4>
+                                    </Col>
+
+                                    <Col md={1}>
+                                        <Image src={Arrow} className="arrow-forward" height="15px" />
+                                    </Col>
+                                </Col>
+
+                                <Col md={5}>
+                                    <h4 className="service-para">Service Stars from:</h4>
+                                </Col>
+                                <Col md={6}>
+                                    <h4 className="right price">800 EURO</h4>
+                                </Col>
+                                <Col md={1} />
+
+                                <Col md={4} />
+                                <Col md={8} className="btn-right">
+                                    <Button className="next-btn">
+                                        Next
+                                    <Image src={Arrowbtn} className="arrow-forward" height="10px" />
+                                    </Button>
                                 </Col>
                             </Col>
                         </div>

@@ -69,11 +69,11 @@
 
 .Home-component .search-main-div{
     width: 40%;
-    height: 100px;
     background : #00bff3;
     border-radius: 8px;
     border: 2px solid #fff;
     display: flex;
+    padding : 10px;
     justify-content: space-around;
     align-content: center;
     flex-direction: column;
@@ -145,4 +145,15 @@
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 20px;
+}
+
+.Home-component .form-input{
+    margin-top:3px;
+    margin-bottom: 3px;
+}
+
+@media (max-width: 990px){
+    .Home-component .navbar-nav{
+        display: none;
+    }
 }

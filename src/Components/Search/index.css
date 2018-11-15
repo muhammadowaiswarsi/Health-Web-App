@@ -1,7 +1,8 @@
 .Search-component{
     background: #EFEFEF;
     width: 100%;
-    height: 180vh;
+    height: 230vh;
+    color : #868686;
 }
 
 .Search-component .navbar-nav{
@@ -60,7 +61,7 @@
 }
 
 .Search-component .left-side-panel{
-    height: 100%;
+    height: 1010px;
     width : 100%;
     background: #fff;
     border-radius: 8px;
@@ -68,7 +69,7 @@
 }
 
 .Search-component .filter-div{
-    height: 17%;
+    height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -84,7 +85,7 @@
 }
 
 .Search-component .Treatment-div{
-    height: 7%;
+    height: 35px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -200,13 +201,16 @@
     width: 100%;
     border-radius: 8px;
     background: #fff;
-    height: 400px;
-    padding: 10px;
+    height: 320px;
+    padding: 15px;
+    margin-bottom: 25px;
   }
 
   .Search-component .first-div-head{
       margin : 0;
-      color : #000
+      color : #000;
+      text-shadow: 0.2px 0.2px;
+      margin-left: 15px;
   }
 
   .Search-component .arrow-div{
@@ -234,5 +238,29 @@
   }
 
   .Search-component .next-btn{
-      
+      background: #F46523;
+      width: 100px;
+      color: #fff;
+  }
+
+  .Search-component .arrow-forward{
+    transform: rotate(180deg);
+  }
+
+  .Search-component .btn-default{
+      text-shadow: none;
+  }
+
+  .Search-component .service-para{
+      color : #5D5D5D;
+      text-shadow: 0.2px 0.2px;
+  }
+
+  .Search-component .price{
+      font-weight: bold;
+      color : #000;
+  }
+
+  .Search-component .btn-default{
+      border : none;
   }
