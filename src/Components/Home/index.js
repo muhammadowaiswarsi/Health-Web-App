@@ -173,8 +173,8 @@ class Home extends Component {
         </Col>
 
         <Col md={12} lg={12} className="boxes-div">
-          <Col md={4} lg={4} />
-          <Col md={4} lg={4} className="city-search-div noPadMar flex-and-around">
+          <Col md={4} lg={4} sm={3} xs={0} />
+          <Col md={4} lg={4} sm={6} xs={12} className="city-search-div flex-and-around">
             <Col md={7} className="noPadMar flex-and-space">
               <FormControl
                 type="text"
@@ -185,112 +185,113 @@ class Home extends Component {
               <Button bsStyle="warning">Search</Button>
             </Col>
           </Col>
-          <Col md={4} lg={4} />
+          <Col md={4} lg={4} sm={3} xs={0} />
         </Col>
 
 
-        <Col md={12} className="end-link-div">
-          <Col md={12} lg={12}>
-            <Col md={1} />
-            <Col md={10}>
-              <Col md={2} />
-              <Col md={3}>
+        <Col md={12} lg={12} sm={0} xs={0} className="end-link-div">
+
+          <Col md={12} lg={12} sm={12} xs={12}>
+            <Col md={1} lg={1} sm={0} xs={0} />
+            <Col md={10} lg={10} xs={12} sm={12}>
+              <Col md={2} lg={2} xs={0} sm={0} />
+              <Col md={3} lg={3} xs={4} sm={4}>
                 <p>Text + URL to Page</p>
               </Col>
-              <Col md={1} />
-              <Col md={3}>
+              <Col md={1} lg={1} xs={0} sm={0} />
+              <Col md={3} lg={3} xs={4} sm={4}>
                 <p>Text + URL to Page</p>
               </Col>
-              <Col md={1} />
-              <Col md={3}>
+              <Col md={1} lg={1} xs={0} sm={0} />
+              <Col md={3} lg={3} xs={4} sm={4}>
                 <p>Text + URL to Page</p>
               </Col>
-              <Col md={2} />
+              <Col md={2} lg={2} xs={0} sm={0} />
             </Col>
-            <Col md={1} />
+            <Col md={1} lg={1} sm={0} xs={0} />
           </Col>
 
-          <Col md={12} lg={12}>
-            <Col md={1} />
-            <Col md={10}>
-              <Col md={2} />
-              <Col md={3}>
+          <Col md={12} lg={12} sm={12} xs={12}>
+            <Col md={1} lg={1} sm={0} xs={0} />
+            <Col md={10} lg={10} xs={12} sm={12}>
+              <Col md={2} lg={2} xs={0} sm={0} />
+              <Col md={3} lg={3} xs={4} sm={4}>
                 <p>Text + URL to Page</p>
               </Col>
-              <Col md={1} />
-              <Col md={3}>
+              <Col md={1} lg={1} xs={0} sm={0} />
+              <Col md={3} lg={3} xs={4} sm={4}>
                 <p>Text + URL to Page</p>
               </Col>
-              <Col md={1} />
-              <Col md={3}>
+              <Col md={1} lg={1} xs={0} sm={0} />
+              <Col md={3} lg={3} xs={4} sm={4}>
                 <p>Text + URL to Page</p>
               </Col>
-              <Col md={2} />
+              <Col md={2} lg={2} xs={0} sm={0} />
             </Col>
-            <Col md={1} />
-          </Col>
-
-
-          <Col md={12} lg={12}>
-            <Col md={1} />
-            <Col md={10}>
-              <Col md={2} />
-              <Col md={3}>
-                <p>Text + URL to Page</p>
-              </Col>
-              <Col md={1} />
-              <Col md={3}>
-                <p>Text + URL to Page</p>
-              </Col>
-              <Col md={1} />
-              <Col md={3}>
-                <p>Text + URL to Page</p>
-              </Col>
-              <Col md={2} />
-            </Col>
-            <Col md={1} />
+            <Col md={1} lg={1} sm={0} xs={0} />
           </Col>
 
 
-          <Col md={12} lg={12}>
-            <Col md={1} />
-            <Col md={10}>
-              <Col md={2} />
-              <Col md={3}>
+          <Col md={12} lg={12} sm={12} xs={12}>
+            <Col md={1} lg={1} sm={0} xs={0} />
+            <Col md={10} lg={10} xs={12} sm={12}>
+              <Col md={2} lg={2} xs={0} sm={0} />
+              <Col md={3} lg={3} xs={4} sm={4}>
                 <p>Text + URL to Page</p>
               </Col>
-              <Col md={1} />
-              <Col md={3}>
+              <Col md={1} lg={1} xs={0} sm={0} />
+              <Col md={3} lg={3} xs={4} sm={4}>
                 <p>Text + URL to Page</p>
               </Col>
-              <Col md={1} />
-              <Col md={3}>
+              <Col md={1} lg={1} xs={0} sm={0} />
+              <Col md={3} lg={3} xs={4} sm={4}>
                 <p>Text + URL to Page</p>
               </Col>
-              <Col md={2} />
+              <Col md={2} lg={2} xs={0} sm={0} />
             </Col>
-            <Col md={1} />
+            <Col md={1} lg={1} sm={0} xs={0} />
           </Col>
 
 
-          <Col md={12} lg={12}>
-            <Col md={1} />
-            <Col md={10}>
-              <Col md={2} />
-              <Col md={3}>
+          <Col md={12} lg={12} sm={12} xs={12}>
+            <Col md={1} lg={1} sm={0} xs={0} />
+            <Col md={10} lg={10} xs={12} sm={12}>
+              <Col md={2} lg={2} xs={0} sm={0} />
+              <Col md={3} lg={3} xs={4} sm={4}>
                 <p>Text + URL to Page</p>
               </Col>
-              <Col md={1} />
-              <Col md={3}>
+              <Col md={1} lg={1} xs={0} sm={0} />
+              <Col md={3} lg={3} xs={4} sm={4}>
                 <p>Text + URL to Page</p>
               </Col>
-              <Col md={1} />
-              <Col md={3}>
+              <Col md={1} lg={1} xs={0} sm={0} />
+              <Col md={3} lg={3} xs={4} sm={4}>
                 <p>Text + URL to Page</p>
               </Col>
-              <Col md={2} />
+              <Col md={2} lg={2} xs={0} sm={0} />
             </Col>
-            <Col md={1} />
+            <Col md={1} lg={1} sm={0} xs={0} />
+          </Col>
+
+
+          <Col md={12} lg={12} sm={12} xs={12}>
+            <Col md={1} lg={1} sm={0} xs={0} />
+            <Col md={10} lg={10} xs={12} sm={12}>
+              <Col md={2} lg={2} xs={0} sm={0} />
+              <Col md={3} lg={3} xs={4} sm={4}>
+                <p>Text + URL to Page</p>
+              </Col>
+              <Col md={1} lg={1} xs={0} sm={0} />
+              <Col md={3} lg={3} xs={4} sm={4}>
+                <p>Text + URL to Page</p>
+              </Col>
+              <Col md={1} lg={1} xs={0} sm={0} />
+              <Col md={3} lg={3} xs={4} sm={4}>
+                <p>Text + URL to Page</p>
+              </Col>
+              <Col md={2} lg={2} xs={0} sm={0} />
+            </Col>
+            <Col md={1} lg={1} sm={0} xs={0} />
           </Col>
 
         </Col>

@@ -114,17 +114,20 @@
     background-repeat: no-repeat;
     height: 200px;
     width: 100%;
+    background-size: 100% 100%;
+    margin-bottom: 5px;
 }
 
 .Home-component .city-search-div{
     background : #00bff3;
-    height: 60px;
     border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+
 }
 
 .Home-component .noPadMar{
     padding : 0;
-    margin : 0;
 }
 
 .Home-component .flex-and-space{
