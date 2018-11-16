@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { FormControl, Col, Button, Navbar, Image, Nav } from "react-bootstrap"
+import { Col, Button, Navbar, Image, Nav, MenuItem, NavDropdown, NavItem } from "react-bootstrap"
 import "./index.css"
 import Logo from "./../../assets/logo.png"
 import Doctor from "../../assets/happydoctor.jpg"
 import Arrow from "../../assets/left-arrow.png"
-import Arrowbtn from "../../assets/left-arrow-white.png"
 import ClinicLogo from "../../assets/clinic-log.png"
 
 class Clinic extends Component {
@@ -24,10 +23,34 @@ class Clinic extends Component {
                                 <Image src={Logo} width="45px" />
                                 KANON HEALTH</a>
                         </Navbar.Brand>
+                        <Navbar.Toggle />
                     </Navbar.Header>
                     <Nav>
                         <h3 className="navbar-head">Commercial Text Here</h3>
                     </Nav>
+
+
+                    <Navbar.Collapse>
+                        <NavItem eventKey={1} href="#">
+                            Link
+      </NavItem>
+                        <NavItem eventKey={2} href="#">
+                            Link
+      </NavItem>
+                        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+                            <MenuItem eventKey={3.1}>Action</MenuItem>
+                            <MenuItem eventKey={3.2}>Another action</MenuItem>
+                            <MenuItem eventKey={3.3}>Something else here</MenuItem>
+                            <MenuItem divider />
+                            <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                        </NavDropdown>
+                        <NavItem eventKey={1} href="#">
+                            Link Right
+      </NavItem>
+                        <NavItem eventKey={2} href="#">
+                            Link Right
+      </NavItem>
+                    </Navbar.Collapse>
                 </Navbar>
 
                 <Col md={12}>
@@ -46,9 +69,9 @@ class Clinic extends Component {
                             <h2 className="first-div-head">
                                 Dr. Michael Smith
                             </h2>
-                            <Col md={4}>
+                            <Col md={4} sm={4} xs={4}>
                                 <Col md={12}>
-                                    <Image src={Doctor} />
+                                    <Image src={Doctor} width="100%" style={{ maxHeight: "210px" }} />
                                 </Col>
 
                                 <Col md={12} className="flex-and-center">
@@ -220,16 +243,16 @@ class Clinic extends Component {
                                 </Col>
 
                                 <Col md={12}>
-                                    <Col md={6} className="clinic-logo-image-div">
-                                        <Col md={3} className="clinic-logo-image-div">
+                                    <Col md={6} xs={6} sm={6} className="clinic-logo-image-div">
+                                        <Col md={3} xs={5} sm={3} className="clinic-logo-image-div">
                                             <Image src={ClinicLogo} className="arrow-forward" height="50px" />
                                         </Col>
-                                        <Col md={9}>
+                                        <Col md={9} xs={9} sm={9}>
                                             <h4 className="clinic-Name">Clinic Name here Speciality</h4>
                                         </Col>
                                     </Col>
-                                    <Col md={1} />
-                                    <Col md={5} className="flex-and-center">
+                                    <Col md={1} xs={1} sm={1} />
+                                    <Col md={5} xs={5} sm={5} className="flex-and-center">
                                         <Button className="contact-btn">
                                             Contact Practice
                                     </Button>
@@ -239,16 +262,16 @@ class Clinic extends Component {
 
 
                                 <Col md={12}>
-                                    <Col md={6} className="clinic-logo-image-div">
-                                        <Col md={3} className="clinic-logo-image-div">
+                                    <Col md={6} xs={6} sm={6} className="clinic-logo-image-div">
+                                        <Col md={3} xs={5} sm={3} className="clinic-logo-image-div">
                                             <Image src={ClinicLogo} className="arrow-forward" height="50px" />
                                         </Col>
-                                        <Col md={9}>
+                                        <Col md={9} xs={9} sm={9}>
                                             <h4 className="clinic-Name">Clinic Name here Speciality</h4>
                                         </Col>
                                     </Col>
-                                    <Col md={1} />
-                                    <Col md={5} className="flex-and-center">
+                                    <Col md={1} xs={1} sm={1} />
+                                    <Col md={5} xs={5} sm={5} className="flex-and-center">
                                         <Button className="contact-btn">
                                             Contact Practice
                                     </Button>
@@ -262,7 +285,7 @@ class Clinic extends Component {
 
                         <div className="third-div">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14481.700219875074!2d66.99284405!3d24.849328300000003!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1542313778105" width="100%" height="205px"
-                                frameborder="0"  allowfullscreen></iframe>
+                                frameborder="0" allowfullscreen></iframe>
                         </div>
 
                         <div className="second-div">

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FormControl, Col, Button, Navbar, Image, Nav } from "react-bootstrap"
+import { FormControl, Col, Button, Navbar, Image, Nav, MenuItem, NavDropdown, NavItem } from "react-bootstrap"
 import "./index.css"
 import Logo from "./../../assets/logo.png"
 import Doctor from "../../assets/happydoctor.jpg"
@@ -24,10 +24,34 @@ class Profile extends Component {
                                 <Image src={Logo} width="45px" />
                                 KANON HEALTH</a>
                         </Navbar.Brand>
+                        <Navbar.Toggle />
                     </Navbar.Header>
                     <Nav>
                         <h3 className="navbar-head">Commercial Text Here</h3>
                     </Nav>
+
+
+                    <Navbar.Collapse>
+                        <NavItem eventKey={1} href="#">
+                            Link
+      </NavItem>
+                        <NavItem eventKey={2} href="#">
+                            Link
+      </NavItem>
+                        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+                            <MenuItem eventKey={3.1}>Action</MenuItem>
+                            <MenuItem eventKey={3.2}>Another action</MenuItem>
+                            <MenuItem eventKey={3.3}>Something else here</MenuItem>
+                            <MenuItem divider />
+                            <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                        </NavDropdown>
+                        <NavItem eventKey={1} href="#">
+                            Link Right
+      </NavItem>
+                        <NavItem eventKey={2} href="#">
+                            Link Right
+      </NavItem>
+                    </Navbar.Collapse>
                 </Navbar>
 
                 <Col md={12}>
@@ -41,14 +65,14 @@ class Profile extends Component {
                 <Col md={12}>
                     <Col md={1} />
 
-                    <Col md={9}>
+                    <Col md={10}>
                         <div className="first-div">
                             <h2 className="first-div-head">
                                 Dr. Michael Smith
                             </h2>
-                            <Col md={4}>
+                            <Col md={4} xs={6} sm={6}>
                                 <Col md={12}>
-                                    <Image src={Doctor} />
+                                    <Image src={Doctor} height="320px" style={{ width: "100%" }} />
                                 </Col>
 
                                 <Col md={12} className="flex-and-center">
@@ -97,35 +121,35 @@ class Profile extends Component {
                                     <h4>4, 5(2,0 reviews)</h4>
                                 </Col>
 
-                                <Col md={12} className="satisfied-main-div">
-                                    <Col md={1}>
+                                <Col md={12} xs={12} sm={12} className="satisfied-main-div">
+                                    <Col md={1} xs={1} sm={1}>
                                         <Image src={Arrow} height="15px" />
                                     </Col>
 
-                                    <Col md={10}>
+                                    <Col md={10} xs={10} sm={10}>
                                         <h4>I was very satisfied and will come back again! Thanks a lot..</h4>
                                     </Col>
 
-                                    <Col md={1}>
+                                    <Col md={1} xs={1} sm={1}>
                                         <Image src={Arrow} className="arrow-forward" height="15px" />
                                     </Col>
                                 </Col>
 
-                                <Col md={12}>
+                                <Col md={12} xs={12} sm={12}>
                                     <h4>Member in:</h4>
                                 </Col>
 
-                                <Col md={12}>
-                                    <Col md={6} className="clinic-logo-image-div">
-                                        <Col md={3} className="clinic-logo-image-div">
+                                <Col md={12} xs={12} sm={12}>
+                                    <Col md={6} xs={6} sm={6} className="clinic-logo-image-div">
+                                        <Col md={3} xs={3} sm={3} className="clinic-logo-image-div">
                                             <Image src={ClinicLogo} className="arrow-forward" height="50px" />
                                         </Col>
-                                        <Col md={9}>
+                                        <Col md={9} xs={9} sm={9}>
                                             <h4 className="clinic-Name">Clinic Name here Speciality</h4>
                                         </Col>
                                     </Col>
-                                    <Col md={1} />
-                                    <Col md={5} className="flex-and-center">
+                                    <Col md={1} xs={1} sm={1} />
+                                    <Col md={5} xs={5} sm={5} className="flex-and-center">
                                         <Button className="contact-btn">
                                             Contact Practice
                                     </Button>
@@ -134,17 +158,17 @@ class Profile extends Component {
                                 </Col>
 
 
-                                <Col md={12}>
-                                    <Col md={6} className="clinic-logo-image-div">
+                                <Col md={12} xs={12} sm={12}>
+                                    <Col md={6} xs={6} sm={6} className="clinic-logo-image-div">
                                         <Col md={3} className="clinic-logo-image-div">
                                             <Image src={ClinicLogo} className="arrow-forward" height="50px" />
                                         </Col>
-                                        <Col md={9}>
+                                        <Col md={9} xs={9} sm={9}>
                                             <h4 className="clinic-Name">Clinic Name here Speciality</h4>
                                         </Col>
                                     </Col>
-                                    <Col md={1} />
-                                    <Col md={5} className="flex-and-center">
+                                    <Col md={1} xs={1} sm={1} />
+                                    <Col md={5} xs={5} sm={5} className="flex-and-center">
                                         <Button className="contact-btn">
                                             Contact Practice
                                     </Button>
@@ -175,40 +199,39 @@ class Profile extends Component {
                             </Col>
 
                             <Col md={12}>
-                                <Col md={4}>
+                                <Col md={4} xs={6} sm={6}>
                                     <h4>- Standard consultation:</h4>
                                 </Col>
-                                <Col md={8}>
+                                <Col md={8} xs={6} sm={6}>
                                     <h4>9,90 EUR</h4>
                                 </Col>
                             </Col>
 
-                            <Col md={12}>
+                            <Col md={12} xs={12} sm={12}>
                                 <div className="border-div">
-
                                 </div>
                             </Col>
 
                             <Col md={12}>
-                                <Col md={4}>
+                                <Col md={4} xs={6} sm={6}>
                                     <h4>+ Complete consultation:</h4>
                                 </Col>
-                                <Col md={8}>
+                                <Col md={8} xs={6} sm={6}>
                                     <h4>500,00 EUR</h4>
                                 </Col>
                             </Col>
 
                             <Col md={12}>
-                                <Col md={4}>
+                                <Col md={4} xs={6} sm={6}>
                                     <h4>+ 2nd Opinion:</h4>
                                 </Col>
-                                <Col md={8}>
+                                <Col md={8} xs={6} sm={6}>
                                     <h4>2.500,00 EUR</h4>
                                 </Col>
                             </Col>
 
                             <Col md={12}>
-                                <Col md={4}>
+                                <Col md={4} xs={6} sm={6}>
                                     <h4>+ Other consultation:</h4>
                                 </Col>
                             </Col>
@@ -216,7 +239,7 @@ class Profile extends Component {
 
                     </Col>
 
-                    <Col md={2} />
+                    <Col md={1} />
                 </Col>
             </div >
         );

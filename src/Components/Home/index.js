@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavDropdown, MenuItem, Image, Col, Button, FormControl } from "react-bootstrap"
+import { Navbar, Nav, NavDropdown, MenuItem, Image, Col, Button, FormControl, NavItem } from "react-bootstrap"
 import "./index.css"
 import Logo from "./../../assets/logo.png"
 
@@ -15,13 +15,16 @@ class Home extends Component {
     return (
       <div className="Home-component">
         <Navbar>
+          {/* <Col md={6} lg={6} xs={12} sm={12}> */}
           <Navbar.Header>
             <Navbar.Brand>
               <a href="#home">
                 <Image src={Logo} width="45px" />
                 KANON HEALTH</a>
             </Navbar.Brand>
+            <Navbar.Toggle />
           </Navbar.Header>
+          {/* </Col> */}
           <Nav>
             <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
               <MenuItem eventKey={3.1}>Action</MenuItem>
@@ -55,6 +58,32 @@ class Home extends Component {
               <MenuItem eventKey={3.4}>Separated link</MenuItem>
             </NavDropdown>
           </Nav>
+         
+         <Navbar.Collapse>
+            <div className="collapse">
+            <Nav>
+              <NavItem eventKey={1} href="#">
+                Link
+      </NavItem>
+              <NavItem eventKey={2} href="#">
+                Link
+      </NavItem>
+              <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+                <MenuItem eventKey={3.1}>Action</MenuItem>
+                <MenuItem eventKey={3.2}>Another action</MenuItem>
+                <MenuItem eventKey={3.3}>Something else here</MenuItem>
+                <MenuItem divider />
+                <MenuItem eventKey={3.3}>Separated link</MenuItem>
+              </NavDropdown>
+              <NavItem eventKey={1} href="#">
+                Link Right
+      </NavItem>
+              <NavItem eventKey={2} href="#">
+                Link Right
+      </NavItem>
+              </Nav>
+            </div>
+          </Navbar.Collapse>
         </Navbar>
 
         <div className="main-div">
@@ -189,7 +218,7 @@ class Home extends Component {
         </Col>
 
 
-        <Col md={12} lg={12} sm={0} xs={0} className="end-link-div">
+        <Col md={12} lg={12} sm={12} xs={12} className="end-link-div">
 
           <Col md={12} lg={12} sm={12} xs={12}>
             <Col md={1} lg={1} sm={0} xs={0} />

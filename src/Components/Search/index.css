@@ -19,10 +19,6 @@
     align-items: center;
 }
 
-.Search-component .navbar-header{
-    width : 50%
-}
-
 .Search-component .navbar-default .navbar-brand{
     color : #fff;
     font-size: 45px
@@ -264,3 +260,15 @@
   .Search-component .btn-default{
       border : none;
   }
+
+@media (max-width : 800px){
+    .Search-component h4{
+        font-size: 16px;
+    }
+}
+
+@media (max-width : 720px){
+    .Search-component h4{
+        font-size: 14px;
+    }
+}

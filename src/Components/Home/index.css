@@ -9,10 +9,6 @@
     align-items: center;
 }
 
-.Home-component .navbar-header{
-    width : 50%
-}
-
 .Home-component .navbar-default .navbar-brand{
     color : #fff;
     font-size: 45px
@@ -155,8 +151,16 @@
     margin-bottom: 3px;
 }
 
-@media (max-width: 990px){
-    .Home-component .navbar-nav{
+.navbar-default .navbar-collapse a{
+    color : #fff;
+}
+
+.navbar-default .dropdown-menu>li>a{
+    color: #000
+}
+
+@media (max-width: 767px){
+    .navbar-nav{
         display: none;
     }
 }

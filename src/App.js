@@ -13,7 +13,7 @@ class App extends Component {
       <Router history={history}>
         <Switch>
           <Route path="/" component={Home} />
-          <Route path="/List" component={Search} />
+          <Route path="/Search" component={Search} />
           <Route path="/Profile" component={Profile} />
           <Route path="/Clinic" component={Clinic} />
         </Switch>
