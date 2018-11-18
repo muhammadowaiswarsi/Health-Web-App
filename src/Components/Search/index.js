@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FormControl, Col, Button, Navbar, Image, Nav, MenuItem, NavDropdown, NavItem } from "react-bootstrap"
+import { FormControl, Col, Button, Navbar, Image, Nav } from "react-bootstrap"
 import "./index.css"
 import Logo from "./../../assets/logo.png"
 import Doctor from "../../assets/happydoctor.jpg"
@@ -7,52 +7,21 @@ import Arrow from "../../assets/left-arrow.png"
 import Arrowbtn from "../../assets/left-arrow-white.png"
 
 class Search extends Component {
-    constructor() {
-        super()
-    }
-
-
 
     render() {
         return (
             <div className="Search-component">
                 <Navbar>
-                    <Col md={6} lg={6} xs={12} sm={12}>
                         <Navbar.Header>
                             <Navbar.Brand>
                                 <a href="#home">
                                     <Image src={Logo} width="45px" />
                                     KANON HEALTH</a>
                             </Navbar.Brand>
+                            <Nav className="Nav-Hidden">
+                                <h3 className="navbar-head">Commercial Text Here</h3>
+                            </Nav>
                         </Navbar.Header>
-                        <Navbar.Toggle />
-                    </Col>
-                    <Nav>
-                        <h3 className="navbar-head">Commercial Text Here</h3>
-                    </Nav>
-
-
-                    <Navbar.Collapse>
-                        <NavItem eventKey={1} href="#">
-                            Link
-      </NavItem>
-                        <NavItem eventKey={2} href="#">
-                            Link
-      </NavItem>
-                        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                            <MenuItem eventKey={3.1}>Action</MenuItem>
-                            <MenuItem eventKey={3.2}>Another action</MenuItem>
-                            <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                            <MenuItem divider />
-                            <MenuItem eventKey={3.3}>Separated link</MenuItem>
-                        </NavDropdown>
-                        <NavItem eventKey={1} href="#">
-                            Link Right
-      </NavItem>
-                        <NavItem eventKey={2} href="#">
-                            Link Right
-      </NavItem>
-                    </Navbar.Collapse>
                 </Navbar>
 
                 <Col md={12}>

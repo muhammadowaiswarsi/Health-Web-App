@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Button, Navbar, Image, Nav, MenuItem, NavDropdown, NavItem } from "react-bootstrap"
+import { Col, Button, Navbar, Image, Nav } from "react-bootstrap"
 import "./index.css"
 import Logo from "./../../assets/logo.png"
 import Doctor from "../../assets/happydoctor.jpg"
@@ -7,12 +7,7 @@ import Arrow from "../../assets/left-arrow.png"
 import ClinicLogo from "../../assets/clinic-log.png"
 
 class Clinic extends Component {
-    constructor() {
-        super()
-    }
-
-
-
+    
     render() {
         return (
             <div className="Clinic-detail-component">
@@ -23,34 +18,10 @@ class Clinic extends Component {
                                 <Image src={Logo} width="45px" />
                                 KANON HEALTH</a>
                         </Navbar.Brand>
-                        <Navbar.Toggle />
+                        <Nav className="Nav-Hidden">
+                            <h3 className="navbar-head">Commercial Text Here</h3>
+                        </Nav>
                     </Navbar.Header>
-                    <Nav>
-                        <h3 className="navbar-head">Commercial Text Here</h3>
-                    </Nav>
-
-
-                    <Navbar.Collapse>
-                        <NavItem eventKey={1} href="#">
-                            Link
-      </NavItem>
-                        <NavItem eventKey={2} href="#">
-                            Link
-      </NavItem>
-                        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                            <MenuItem eventKey={3.1}>Action</MenuItem>
-                            <MenuItem eventKey={3.2}>Another action</MenuItem>
-                            <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                            <MenuItem divider />
-                            <MenuItem eventKey={3.3}>Separated link</MenuItem>
-                        </NavDropdown>
-                        <NavItem eventKey={1} href="#">
-                            Link Right
-      </NavItem>
-                        <NavItem eventKey={2} href="#">
-                            Link Right
-      </NavItem>
-                    </Navbar.Collapse>
                 </Navbar>
 
                 <Col md={12}>
@@ -284,7 +255,7 @@ class Clinic extends Component {
 
 
                         <div className="third-div">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14481.700219875074!2d66.99284405!3d24.849328300000003!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1542313778105" width="100%" height="205px"
+                            <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14481.700219875074!2d66.99284405!3d24.849328300000003!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1542313778105" width="100%" height="205px"
                                 frameborder="0" allowfullscreen></iframe>
                         </div>
 

@@ -1,13 +1,12 @@
 .Profile-component{
     background: #EFEFEF;
     width: 100%;
-    height: 230vh;
+    height: 300vh;
     color : #868686;
 }
 
 .Profile-component .navbar-nav{
     float: right;
-    width: 25%;
     margin-top: 12px;
     color : #fff;
 }
@@ -20,7 +19,7 @@
 }
 
 .Profile-component .navbar-header{
-    width : 50%
+    width : 100%;
 }
 
 .Profile-component .navbar-default .navbar-brand{
@@ -47,6 +46,7 @@
 
 .Profile-component .navbar-head{
     margin : 0;
+    margin-right : 15px;
 }
 
 .Profile-component .container{

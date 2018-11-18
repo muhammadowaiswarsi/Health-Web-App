@@ -1,13 +1,11 @@
 .Clinic-detail-component{
     background: #EFEFEF;
     width: 100%;
-    height: 237vh;
     color : #868686;
 }
 
 .Clinic-detail-component .navbar-nav{
     float: right;
-    width: 25%;
     margin-top: 12px;
     color : #fff;
 }
@@ -20,7 +18,7 @@
 }
 
 .Clinic-detail-component .navbar-header{
-    width : 50%
+    width : 100%;
 }
 
 .Clinic-detail-component .navbar-default .navbar-brand{
@@ -47,6 +45,7 @@
 
 .Clinic-detail-component .navbar-head{
     margin : 0;
+    margin-right : 15px;
 }
 
 .Clinic-detail-component .container{

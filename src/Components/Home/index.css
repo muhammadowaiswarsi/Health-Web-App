@@ -11,7 +11,7 @@
 
 .Home-component .navbar-default .navbar-brand{
     color : #fff;
-    font-size: 45px
+    font-size: 37px
 }
 
 .Home-component .navbar{
@@ -155,12 +155,43 @@
     color : #fff;
 }
 
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+    color : #fff !important;
+}
+
+.navbar-nav .open .dropdown-menu{
+    padding : 5px;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+    color : #fff !important;
+}
+
 .navbar-default .dropdown-menu>li>a{
     color: #000
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    padding : 0px 35px 0px 0px;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    color : #0473aa;
+    background: #eea53d !important;
+}
+
+.navbar-header{
+    width: 100%;
+}
+
 @media (max-width: 767px){
-    .navbar-nav{
+    .Nav-Hidden{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .toggle-nav-bar{
         display: none;
     }
 }
