@@ -46,7 +46,7 @@ class Search extends Component {
                     </Navbar.Header>
                 </Navbar>
 
-                <Col md={12}>
+                <Col md={12} className="Main-div">
                     <Col md={1} lg={1} />
                     <Col md={10}>
                         <h1>Search for the best Doctor</h1>
@@ -54,7 +54,7 @@ class Search extends Component {
                     <Col md={1} />
                 </Col>
 
-                <Col md={12}>
+                <Col md={12} className="Main-div">
                     <Col md={2} lg={2} xsHidden smHidden className="panel-col">
                         <div className="left-side-panel">
 

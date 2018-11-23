@@ -1,8 +1,11 @@
 .Search-component{
     background: #EFEFEF;
     width: 100%;
-    height: 258vh;
     color : #868686;
+}
+
+.Search-component .Main-div{
+    background: #EFEFEF;
 }
 
 .Search-component .navbar-nav{
