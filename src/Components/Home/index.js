@@ -1,9 +1,38 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavDropdown, MenuItem, Image, Col, Button, FormControl } from "react-bootstrap"
-import "./index.css"
+import { Navbar, Nav, NavDropdown, MenuItem, Image, Col, Button, FormControl, FormGroup } from "react-bootstrap";
+import filterDoctors from "./../../services/httpService";
+import { DoctorService } from "./../../services/doctorService";
 import Logo from "./../../assets/logo.png"
+import "./index.css"
 
 class Home extends Component {
+
+  constructor(props){
+    super(props)
+    this.state = {
+      city: '',
+      rating: '',
+      price: ''
+    }
+  }
+
+  handleChange = (event) => {
+    this.setState({
+      [event.target.id] : event.target.value
+    })
+  }
+
+
+  searchDoctors = () => {
+    filterDoctors(this.state.price)
+    .then(({data})=>{
+      DoctorService.searchDoctors(data.data);
+     this.props.history.push('/search')
+    })
+    .catch((err)=>{
+      console.log(err)
+    })
+  }
 
   render() {
     return (
@@ -91,28 +120,37 @@ class Home extends Component {
           <div className="search-main-div">
             <Col md={12} className="noPadMar">
               <Col md={3} className="PadMar">
-                <FormControl
-                  type="text"
-                  placeholder="Enter City"
-                  className="form-input"
-                />
+              <FormGroup controlId="price">
+                  <FormControl
+                    type="text"
+                    placeholder="Enter price"
+                    className="form-input"
+                    onChange={this.handleChange}
+                  />
+                </FormGroup>
               </Col>
               <Col md={3} className="PadMar">
-                <FormControl
-                  type="text"
-                  placeholder="Enter City"
-                  className="form-input"
-                />
+                <FormGroup controlId="city">
+                  <FormControl
+                    type="text"
+                    placeholder="Enter City"
+                    className="form-input"
+                    onChange={this.handleChange}                    
+                  />
+                </FormGroup>
               </Col>
               <Col md={3} className="PadMar">
-                <FormControl
-                  type="text"
-                  placeholder="Enter City"
-                  className="form-input"
-                />
+              <FormGroup controlId="rating">
+                  <FormControl
+                    type="text"
+                    placeholder="Enter Ratings"
+                    className="form-input"
+                    onChange={this.handleChange}                    
+                  />
+                </FormGroup>
               </Col>
               <Col md={2} className="PadMar">
-                <Button bsStyle="warning">Search</Button>
+                <Button bsStyle="warning" onClick={this.searchDoctors}>Search</Button>
               </Col>
             </Col>
 
