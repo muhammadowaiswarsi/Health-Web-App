@@ -8,15 +8,35 @@ import ClinicLogo from "../../assets/clinic-log.png"
 
 class Profile extends Component {
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            doctor: {}
+        }
+    }
+
+    componentDidMount() {
+        if (!this.props.location.state.doctor) {
+            this.props.history.push('/')
+        }
+        else {
+            this.setState({
+                doctor: this.props.location.state.doctor
+            })
+        }
+    }
+
     render() {
+        const { doctor } = this.state
         return (
             <div className="Profile-component">
                 <Navbar>
                     <Navbar.Header>
                         <Navbar.Brand>
-                            <a href="#home">
+                            <span>
                                 <Image src={Logo} width="45px" />
-                                KANON HEALTH</a>
+                                KANON HEALTH
+                                </span>
                         </Navbar.Brand>
                         <Nav className="Nav-Hidden">
                             <h3 className="navbar-head">Commercial Text Here</h3>
@@ -28,7 +48,7 @@ class Profile extends Component {
                 <Col md={12}>
                     <Col md={1} />
                     <Col md={10}>
-                        <h3>Home >> City >> Doctor Smith</h3>
+                        <h3>Home >> City >>  {doctor.first_name ? doctor.first_name : 'N/A'}</h3>
                     </Col>
                     <Col md={1} />
                 </Col>
@@ -39,7 +59,7 @@ class Profile extends Component {
                     <Col md={10}>
                         <div className="first-div">
                             <h2 className="first-div-head">
-                                Dr. Michael Smith
+                                {doctor.first_name ? doctor.first_name : 'N/A'} {doctor.last_name ? doctor.last_name : 'N/A'}
                             </h2>
                             <Col md={4} xs={6} sm={6}>
                                 <Col md={12}>
@@ -56,20 +76,41 @@ class Profile extends Component {
                             </Col>
 
                             <Col md={8}>
-                                <Col md={4}>
-                                    <h4>1st Speciality:</h4>
-                                </Col>
-                                <Col md={8}>
-                                    <h4>Ophthalmology</h4>
-                                </Col>
+                                {
+                                    doctor.specialitys && doctor.specialitys.length ?
+                                        doctor.specialitys.map((specialitys, i) => {
+                                            return (
 
-                                <Col md={4}>
-                                    <h4>2nd Speciality:</h4>
-                                </Col>
-                                <Col md={8}>
-                                    <h4>Sub-Speciality here (1st)</h4>
-                                    <h4>Sub-Speciality here (2nd)</h4>
-                                </Col>
+                                                <div key={i}>
+                                                    <Col md={4}>
+                                                        <h4>{++i} Speciality:</h4>
+                                                    </Col>
+                                                    <Col md={8}>
+                                                        <h4>{specialitys.speciality_title}</h4>
+                                                    </Col>
+                                                </div>
+
+                                            )
+                                        })
+                                        :
+                                        <div>
+                                            <Col md={4}>
+                                                <h4>1st Speciality:</h4>
+                                            </Col>
+                                            <Col md={8}>
+                                                <h4>Not Availabe</h4>
+                                            </Col>
+
+                                            <Col md={4}>
+                                                <h4>2nd Speciality:</h4>
+                                            </Col>
+                                            <Col md={8}>
+                                                <h4>Not Availabe</h4>
+                                                <h4>Not Availabe</h4>
+                                            </Col>
+                                        </div>
+
+                                }
 
                                 <Col md={4}>
                                     <h4>Location:</h4>
@@ -153,15 +194,11 @@ class Profile extends Component {
 
                         <div className="second-div">
                             <h4>About Me:</h4>
-                            <p className="second-div-para">Paragraphs are the building blocks of papers. Many students
-                            define paragraphs in terms of length: a paragraph is a group of at least five sentences, a
-                             paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas
-                              among sentences is what constitutes a paragraph.
-                              Paragraphs are the building blocks of papers. Many students
-                            define paragraphs in terms of length: a paragraph is a group of at least five sentences, a
-                             paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas
-                              among sentences is what constitutes a paragraph.
-                              </p>
+                            <p className="second-div-para">
+                                {
+                                    this.state.doctor.about ? this.state.doctor.about : "Not available"
+                                }
+                            </p>
                         </div>
 
                         <div className="third-div">
@@ -210,7 +247,7 @@ class Profile extends Component {
 
                     </Col>
 
-                    <Col md={1} />
+                    <Col/>
                 </Col>
             </div >
         );

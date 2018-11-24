@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavDropdown, MenuItem, Image, Col, Button, FormControl, FormGroup } from "react-bootstrap";
-import filterDoctors from "./../../services/httpService";
-import { DoctorService } from "./../../services/doctorService";
+// import filterDoctors from "./../../services/httpService";
 import Logo from "./../../assets/logo.png"
 import "./index.css"
 
@@ -24,14 +23,14 @@ class Home extends Component {
 
 
   searchDoctors = () => {
-    filterDoctors(this.state.price)
-    .then(({data})=>{
-      DoctorService.searchDoctors(data.data);
-     this.props.history.push('/search')
-    })
-    .catch((err)=>{
-      console.log(err)
-    })
+    // filterDoctors(this.state.price)
+    // .then(({data})=>{
+    //   DoctorService.searchDoctors(data.data);
+    //  this.props.history.push('/search')
+    // })
+    // .catch((err)=>{
+    //   console.log(err)
+    // })
   }
 
   render() {

@@ -4,5 +4,14 @@ function filterDoctors(price, callback) {
 	return axios.post(`https://api.kanonhealth.com/api/doctors/search?price=${price}&rating&city`)
 }
 
+function getDoctors(price, callback) {
+	return axios.post(`https://api.kanonhealth.com/api/doctors/list`)
+}
 
-export default filterDoctors;
+
+
+
+export {
+	filterDoctors,
+	getDoctors
+};

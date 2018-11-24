@@ -12,9 +12,9 @@ class App extends Component {
     return (
       <Router history={history}>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/search" component={Search} />
-          <Route path="/profile" component={Profile} />
+          {/* <Route exact path="/" component={Home} /> */}
+          <Route exact path="/" component={Search} />
+          <Route path="/profile/:id" component={Profile} />
           <Route path="/clinic" component={Clinic} />
         </Switch>
       </Router>
