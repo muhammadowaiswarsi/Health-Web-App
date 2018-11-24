@@ -6,6 +6,7 @@ import Doctor from "../../assets/happydoctor.jpg"
 import Arrow from "../../assets/left-arrow.png"
 import Arrowbtn from "../../assets/left-arrow-white.png"
 import "./index.css"
+import StarRatings from 'react-star-ratings';
 
 class Search extends Component {
 
@@ -310,7 +311,7 @@ class Search extends Component {
                         </div>
                     </Col>
 
-                    <Col md={10} lg={10} sm={12} xs={12} >
+                    <Col md={9} lg={9} sm={12} xs={12} >
 
                         {
                             this.state.doctorsList ?
@@ -319,7 +320,7 @@ class Search extends Component {
                                     <div className="first-div">
                                         <h2 className="first-div-head">
                                             {doc.name}
-                                    </h2>
+                                        </h2>
                                         <Col md={4} lg={4} sm={3} xs={3}>
                                             <Image src={doc.avatar ? doc.avatar : Doctor} width="100%" style={{ maxHeight: "260px" }} />
                                         </Col>
@@ -358,7 +359,21 @@ class Search extends Component {
                                                 <h4>Rating:</h4>
                                             </Col>
                                             <Col md={8} lg={8} sm={8} xs={8}>
-                                                <h4>{doc.rate_count ? doc.rate_count : "N/A"}</h4>
+                                                {/* <h4>{doc.rate_count ? doc.rate_count : "N/A"}</h4> */}
+                                                {/* <StarRatings
+                                                // rating={this.state.rating}
+                                                // starRatedColor="blue"
+                                                // changeRating={this.changeRating}
+                                                numberOfStars={6}
+                                                name='rating'
+                                                /> */}
+                                                <StarRatings
+                                                    rating={2.403}
+                                                    starDimension="20px"
+                                                    starSpacing="10px"
+                                                    starRatedColor="#008FC5"
+                                                />
+                                                <p classname="reviews-para">4.5(2,0 reviews)</p>
                                             </Col>
 
                                             <Col md={12} lg={12} sm={12} xs={12} className="satisfied-main-div">

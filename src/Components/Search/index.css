@@ -31,6 +31,11 @@
     margin-bottom: 0;
 }
 
+.Search-component .reviews-para{
+    display: inline;
+    margin-left: 5px;
+}
+
 .Search-component .navbar-brand>img{
     display: inline;
 }
